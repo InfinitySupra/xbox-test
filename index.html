@@ -7,34 +7,167 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>XBOX</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="scss/style.min.css">
 </head>
+
 <body>
-  <header class="header">
-    <div class="container">
-      <div class="header__logo">
-        <a href="#"><img src="images/nav/logo.svg" alt="Logo"></a>
+  <header>
+    <div class="container navHeader">
+      <div class="header__nav">
+        <a class="header__logo" href="#"><img src="./images/nav/nav-logo.svg" alt="logo"></a>
+        <ul class="header__control">
+          <li>Games<a href="#"><img src="./images/nav/nav-share.svg" alt="share"></a></li>
+          <li>Consoles<a href="#"><img src="./images/nav/nav-share.svg" alt="share"></a></li>
+          <li><a href="#">Community</a></li>
+          <li><input type="text" placeholder="Search"></li>
+          <li><a id="main__button-top" href="#"><img src="./images/nav/nav-icon01.svg" alt=""></a>My&#32;XBOX<a href="#"><img src="./images/nav/nav-share.svg" alt="share"></a></li>
+        </ul>
       </div>
-      <div class="header__link">
-        <h6>Games</h6>
-        <a href="#"><img src="images/nav/share.svg" alt="Share"></a>
+    </div>
+    <div class="header__content">
+      <div class="header__title">
+        <h2 class="header__text item1">Star&#32;Wars</h2>
+        <h3 class="header__text item2">Battlefront&#32;II</h3>
       </div>
-      <div class="header__link">
-        <h6>Consoles</h6>
-        <a href="#"><img src="images/nav/share.svg" alt="Share"></a>
-        </div>
-        <div class="header__link">
-          <a href="#">Community</a>
-        </div>
-        <input class="header__input" type="text"  placeholder="Search">
-        <div class="header__link">
-          <a href="#"><img src="images/nav/icon01.svg" alt="Icon01"></a>
-          <h6>My XBOX</h6>
-          <a href="#"><img src="images/nav/share.svg" alt="Share"></a>
-        </div>
+      <div class="header__trigger">
+        <a class="header__item-trigger1" href="#"><img src="./images/nav/nav-prev.svg" alt="prev"></a>
+        <a class="header__item-trigger2" href="#"><img src="./images/nav/nav-next.svg" alt="next"></a>
+      </div>
+      <div class="header__button">
+        <a class="header__item-button" href="#">Watch&#32;Trailer</a>
+        <a class="header__item-button" href="#">Explore&#32;Games</a>
+      </div>
+      <div class="header__bottom">
+        <a class="header__item-bottom" href="#"><img src="./images/nav/nav-enabled.svg" alt=""></a>
+        <a class="header__item-bottom" href="#"><img src="./images/nav/nav-disabled.svg" alt=""></a>
+        <a class="header__item-bottom" href="#"><img src="./images/nav/nav-disabled.svg" alt=""></a>
       </div>
     </div>
   </header>
+  <main>
+    <div class="main__price">
+      <div class="container">
+        <div class="main__title-price">
+          <img class="main__text item1" src="./images/block1/block1-logo.svg" alt="logo">
+          <h2 class="main__text item2">The&#32;best&#32;value</h2>
+          <h3 class="main__text item3">in&#32;games&#32;and&#32;entertainment</h3>
+        </div>
+        <div class="main__box-price">
+          <div class="main__box">
+            <div class="main__image image01"></div>
+            <div class="main__content">
+              <p>XBOX&#32;ONE&#32;X</p>
+              <p>Faster&#32;Processing&#32;Smoother&#32;Gameplay</p>
+              <a class="main__button" href="#">Explore&#32;Consoles&#32;&#38;&#32;Accessories</a>
+            </div>
+            <div class="main__box">
+              <div class="main__image image02"></div>
+              <div class="main__content">
+                <p>mixer&#32;Streaming</p>
+                <p>The&#32;Next&#32;Generation&#32;Of&#32;Life&#32;Game&#32;Streaming</p>
+                <a class="main__button" href="#">Explore&#32;Consoles&#32;&#38;&#32;Accessories</a>
+              </div>
+              <div class="main__box">
+                <div class="main__image image03"></div>
+                <div class="main__content">
+                  <p>Free&#32;Games&#32;Every&#32;Month</p>
+                  <p>Get&#32;up&#32;to&#32;&#36;700&#32;in&#32;free&#32;games</p>
+                  <a class="main__button" href="#">Get&#32;Free&#32;Games</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main__content">
+      <div class="main__nav">
+        <h3>Exclusive&#32;games&#32;on&#32;XBOX</h3>
+        <a class="main__item-trigger" href="#"><img src="./images/nav/nav-prev.svg" alt="prev"></a>
+      </div>
+      <div class="main__box-content">
+        <div class="main__box">
+          <div class="main__image image04"></div>
+          <div class="main__content">
+            <p>Call&#32;of&#32;Duty:&#32;WWII</p>
+            <p>The&#32;C.O.D.E.&#32;Bravery&#32;Pack&#32;is&#32;now&#32;available&#32;in&#32;WWII</p>
+            <a class="main__button" href="#">See&#32;Details</a>
+          </div>
+          <div class="main__box">
+            <div class="main__image image05"></div>
+            <div class="main__content">
+              <p>Destiny&#32;2</p>
+              <p>The&#32;C.O.D.E.&#32;Bravery&#32;Pack&#32;is&#32;now&#32;available&#32;in&#32;WWII</p>
+              <a class="main__button" href="#">See Details</a>
+            </div>
+            <div class="main__box">
+              <div class="main__image image06"></div>
+              <div class="main__content">
+                <p>STEEP</p>
+                <p>The&#32;C.O.D.E.&#32;Bravery&#32;Pack&#32;is&#32;now&#32;available&#32;in&#32;WWII</p>
+                <a class="main__button" href="#">See Details</a>
+              </div>
+              <div class="main__box">
+                <div class="main__image image07"></div>
+                <div class="main__content">
+                  <p>Forza&#32;Motorsport&#32;7</p>
+                  <p>The&#32;C.O.D.E.&#32;Bravery&#32;Pack&#32;is&#32;now&#32;available&#32;in&#32;WWII</p>
+                  <a class="main__button" href="#">See&#32;Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="main__button buttonContent" href="#">XBOX&#32;Store</a>
+    </div>
+    <div class="main__bottom">
+      <div class="container">
+        <div class="main__content">
+          <h1>Xbox&#32;Design&#32;Lab</h1>
+          <p>Make&#32;yours&#32;one&#32;in&#32;a&#32;billion&#32;with&#32;new&#32;colors,&#32;metallic&#32;finishes&#32;and&#32;rubberized&#32;grips.</p>
+          <a href="#">Design&#32;Yours</a>
+          <a href="#">Explore&#32;Consoles&#32;&#38;&#32;Accessories</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="footer__nav">
+        <div class="footer__box">
+          <h6>XBOX</h6>
+          <ul>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Contact&#32;us</a></li>
+            <li><a href="#">Privacy&#32;&#38;&#32;cookies</a></li>
+            <li><a href="#">Terms&#32;of&#32;use</a></li>
+          </ul>
+        </div>
+        <div class="footer__box">
+          <h6>Developers</h6>
+          <ul>
+            <li><a href="#">Games</a></li>
+            <li><a href="#">Windows 10</a></li>
+            <li><a href="#">Creators&#32;Program</a></li>
+            <li><a href="#">Designed&#32;for&#32;XBOX</a></li>
+          </ul>
+        </div>
+        <div class="footer__box">
+          <h6>Follow&#32;Us</h6>
+          <div class="footer__links">
+            <a href="#"><img src="./images/nav/nav-facebook.svg" alt=""></a>
+            <a href="#"><img src="./images/nav/nav-twitter.svg" alt=""></a>
+            <a href="#"><img src="./images/nav/nav-instagram.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>English&#32;(United&#32;States)</p>
+        <p>&#169;&#32;Microsoft&#32;2017</p>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
