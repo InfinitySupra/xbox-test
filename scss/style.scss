@@ -11,7 +11,6 @@ body {
   margin: 0 auto;
   font-family: $fontHind;
 }
-
 li {
   list-style-type: none;
 }
@@ -41,6 +40,7 @@ header {
   .header__logo {
     width: 6em;
     height: 1.81em;
+    scroll-behavior: smooth;
   }
 
   .header__control {
@@ -111,14 +111,14 @@ header {
     font-size: 2.5em;
     line-height: 1.75em;
     animation: pulse 1s infinite alternate;
-  }
-  @keyframes pulse {
-    from {
-      text-shadow: 1px 1px 10px red, 0 0 1em blue, 0 0 0.2em blue;
-    }
+    @keyframes pulse {
+      from {
+        text-shadow: 1px 1px 10px red, 0 0 1em blue, 0 0 0.2em blue;
+      }
 
-    to {
-      text-shadow: 1px 1px 40px red, 0 0 4em blue, 0 0 0.5em blue;
+      to {
+        text-shadow: 1px 1px 40px red, 0 0 4em blue, 0 0 0.5em blue;
+      }
     }
   }
 }
@@ -170,10 +170,7 @@ header {
   background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%);
 
   .priceContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 4em;
+    padding-top: 3em;
   }
 
   .main__title-price {
@@ -182,6 +179,8 @@ header {
     align-items: center;
     justify-content: center;
     color: #FFF;
+    text-shadow: #000 1px 0 7px;
+
     .item1 {
       margin: 0;
       width: 4em;
@@ -191,8 +190,9 @@ header {
 
     .item2 {
       font-size: 3em;
-      line-height: 3.51em;
+      line-height: 1.91em;
       margin: 0;
+
     }
 
     .item3 {
@@ -201,5 +201,111 @@ header {
       font-size: 1.62em;
       line-height: 2.63em;
     }
+  }
+}
+.main__box-price {
+  width: 68.12em;
+  height: 100%;
+  margin-top: 3.92em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main__box {
+  width: 20em;
+  height: 100%;
+  background: #FFF;
+  box-shadow: 0px 0px 7px #181919;
+  margin-bottom: 10.12em;
+}
+.image01 {
+  background: url("../images/block1/block1-xbox.jpg") center no-repeat;
+}
+.image02 {
+  background: url("../images/block1/block1-xbox.jpg") center no-repeat;
+}
+.image03 {
+  background: url("../images/block1/block1-xbox.jpg") center no-repeat;
+}
+.main__image {
+  width: 100%;
+  height: 11.68em;
+  margin: 0;
+  background-size: cover;
+}
+.main__content {
+  width: 17.37em;
+  height: 100%;
+  padding: .5em 1.68em;
+  text-shadow: #727777 1px 0 3px;
+
+}
+.box__button {
+  margin-top: 2.37em;
+  width: 17.37em;
+  height: 3.75em;
+  border-radius: 4px;
+}
+.main__button {
+  color: #FFF;
+  background: #8DD83D;
+  padding: 3.26% 10.02%;
+}
+.main__button:hover {
+  opacity: .8;
+}
+.main__content1 {
+  background: url("../images/block2/block2-background.jpg") center no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  aligin-item: center;
+}
+.main__nav {
+  color: #FFF;
+  background-color: rgba(104, 108, 111, .6);
+  font-size: 36px;
+  line-height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  h3 {
+    padding-left: 32.78%;
+    text-shadow: #000 1px 0 7px;
+  }
+  a {
+    padding-right: 3.43em;
+    width: 1.31em;
+    height: 1.31em;
+  }
+}
+.image04 {
+  background: url("../images/block2/block2-img1.png")center no-repeat;
+}
+.image05 {
+  background: url("../images/block2/block2-img2.png")center no-repeat;
+}
+.image06 {
+  background: url("../images/block2/block2-img3.png")center no-repeat;
+}
+.image07 {
+  background: url("../images/block2/block2-img4.png")center no-repeat;
+}
+.image04, .image05, .image06, .image07 {
+  background-size: cover;
+  filter: blur(1px);
+}
+.main__box-content {
+  background-color: rgba(104, 108, 111, .6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: .3s;
+}
+.pageContent:hover {
+  transform: scale(1.07) translate(2px, 2px);
+  .image04, .image05, .image06, .image07 {
+    filter: blur(0);
   }
 }
