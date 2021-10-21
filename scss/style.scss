@@ -234,11 +234,12 @@ header {
   background-size: cover;
 }
 .main__content {
+  flex-direction: column;
+  display: flex;
   width: 17.37em;
-  height: 100%;
+  height: 11.875em;
   padding: .5em 1.68em;
   text-shadow: #727777 1px 0 3px;
-
 }
 .box__button {
   margin-top: 2.37em;
@@ -249,7 +250,10 @@ header {
 .main__button {
   color: #FFF;
   background: #8DD83D;
-  padding: 3.26% 10.02%;
+  padding: 3.26% 33.02%;
+}
+.buttonPrice {
+  padding: 3.26% 33.02%;
 }
 .main__button:hover {
   opacity: .8;
@@ -302,10 +306,101 @@ header {
   align-items: center;
   justify-content: space-between;
   transition: .3s;
+  overflow:hidden;
+  padding-bottom: 4.28em;
 }
 .pageContent:hover {
   transform: scale(1.07) translate(2px, 2px);
   .image04, .image05, .image06, .image07 {
     filter: blur(0);
+  }
+}
+.buttonContent {
+  position: absolute;
+  padding: 0.96em 4.12em;
+  margin-top: 37.93em;
+  margin-left: 37.74em;
+}
+.main__bottom {
+  background: url("../images/block3/block3-rectangle.jpg") center no-repeat;
+  width: 100%;
+}
+.main__contentBottom {
+  padding-top: 7.12em;
+  width: 33.31em;
+  //height: 13.81em;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 9.06em;
+  color: #FFF;
+  text-shadow: #000 1px 0 7px;
+  h1 {
+    font-size: 3em;
+    margin: 0.07em 0;
+  }
+  p {
+    font-size: 1.3em;
+  }
+  .buttoms {
+    padding-top: 2.31em;
+  }
+  a {
+    padding: 0.5em 1.5em 0.56em 1.18em;
+    background: linear-gradient(
+    180deg, #686C6F 0%, #373A3C 100%);
+    border-radius: 4px;
+    transition: 0.2s;
+    color: #FFF;
+  }
+  a:hover {
+    background: #8DD83D;
+  }
+}
+footer {
+  background-color: #373A3C;
+  h6 {
+    color: #7DD42F;
+    font-size: 18px;
+    line-height: 21px;
+    margin: 0;
+  }
+  a {
+    color: rgba(255,255,255,0.5);
+    transition: 0.3s;
+  }
+  a:hover {
+    color: #FFF;
+  }
+  .footer__nav {
+    padding-top: 3.62em;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px rgba(100, 108, 111, .6) solid;
+  }
+  .footer__box {
+    ul {
+      height: 13.12em;
+      padding-top: 0.87em;
+      padding-left: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-bottom: 3.06em;
+    }
+  }
+  .footer__links {
+    padding-top: 1.75em;
+    width: 6.31em;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .footer__bottom {
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(255,255,255,0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
