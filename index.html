@@ -8,11 +8,12 @@
   <title>XBOX</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="scss/style.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/lightslider.css">
 </head>
 
 <body>
   <header>
-    <div class="container navHeader">
+    <div class="container navHeader" id="p1">
       <div class="header__nav">
         <a class="header__logo" href="#p1"><img src="./images/nav/nav-logo.svg" alt="logo"></a>
         <ul class="header__control">
@@ -45,7 +46,7 @@
     </div>
   </header>
   <main>
-    <div class="main__price" id="p1">
+    <div class="main__price">
       <div class="container priceContainer">
         <div class="main__title-price">
           <img class="main__text item1" src="./images/block1/block1-logo.svg" alt="logo">
@@ -83,44 +84,56 @@
     <div class="main__content1">
       <div class="main__nav">
         <h3>Exclusive&#32;games&#32;on&#32;XBOX</h3>
-        <a class="main__item-trigger" href="#"><img src="./images/nav/nav-next.svg" alt="prev"></a>
+        <button class="main__item-trigger"><img src="./images/nav/nav-next.svg" alt="prev"></button>
       </div>
       <div class="main__box-content">
-        <div class="main__box pageContent">
-          <div class="main__image image04"></div>
-          <div class="main__content">
-            <p>Call&#32;of&#32;Duty:&#32;WWII</p>
-            <p>The&#32;C.O.D.E.&#32;Bravery&#32;Pack&#32;is&#32;now&#32;available&#32;in&#32;WWII</p>
-            <a class="main__button" href="#">See&#32;Details</a>
-          </div>
-        </div>
-        <div class="main__box pageContent">
-          <div class="main__image image05"></div>
-          <div class="main__content">
-            <p>Destiny&#32;2</p>
-            <p>The&#32;C.O.D.E.&#32;Bravery&#32;Pack&#32;is&#32;now&#32;available&#32;in&#32;WWII</p>
-            <a class="main__button" href="#">See Details</a>
-          </div>
-        </div>
-        <div class="main__box pageContent">
-          <div class="main__image image06"></div>
-          <div class="main__content">
-            <p>STEEP</p>
-            <p>The&#32;C.O.D.E.&#32;Bravery&#32;Pack&#32;is&#32;now&#32;available&#32;in&#32;WWII</p>
-            <a class="main__button" href="#">See Details</a>
-          </div>
-        </div>
-        <div class="main__box pageContent">
-          <div class="main__image image07"></div>
-          <div class="main__content">
-            <p>Forza&#32;Motorsport&#32;7</p>
-            <p>The&#32;C.O.D.E.&#32;Bravery&#32;Pack&#32;is&#32;now&#32;available&#32;in&#32;WWII</p>
-            <div class="main__button-content1"></div>
-            <a class="main__button" href="#">See&#32;Details</a>
-          </div>
-        </div>
+        <ul id="autoWidth" class="cs-hidden">
+          <li class="item-a">
+            <div class="main__box pageContent">
+              <div class="main__image image04"></div>
+              <div class="main__content">
+                <p>Call&#32;of&#32;Duty:&#32;WWII</p>
+                <p>The&#32;C.O.D.E.&#32;Bravery&#32;Pack&#32;is&#32;now&#32;available&#32;in&#32;WWII</p>
+                <a class="main__button" href="#">See&#32;Details</a>
+              </div>
+            </div>
+          </li>
+          <li class="item-a">
+            <div class="main__box pageContent">
+              <div class="main__image image05"></div>
+              <div class="main__content">
+                <p>Destiny&#32;2</p>
+                <p>The&#32;C.O.D.E.&#32;Bravery&#32;Pack&#32;is&#32;now&#32;available&#32;in&#32;WWII</p>
+                <a class="main__button" href="#">See Details</a>
+              </div>
+            </div>
+          </li>
+          <li class="item-a">
+            <div class="main__box pageContent">
+              <div class="main__image image06"></div>
+              <div class="main__content">
+                <p>STEEP</p>
+                <p>The&#32;C.O.D.E.&#32;Bravery&#32;Pack&#32;is&#32;now&#32;available&#32;in&#32;WWII</p>
+                <a class="main__button" href="#">See Details</a>
+              </div>
+            </div>
+          </li>
+          <li class="item-a">
+            <div class="main__box pageContent">
+              <div class="main__image image07"></div>
+              <div class="main__content">
+                <p>Forza&#32;Motorsport&#32;7</p>
+                <p>The&#32;C.O.D.E.&#32;Bravery&#32;Pack&#32;is&#32;now&#32;available&#32;in&#32;WWII</p>
+                <div class="main__button-content1"></div>
+                <a class="main__button" href="#">See&#32;Details</a>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
-      <a class="main__button buttonContent" href="#">XBOX&#32;Store</a>
+      <div class="container__button">
+        <a class="main__button buttonContent" href="#">XBOX&#32;Store</a>
+      </div>
     </div>
     <div class="main__bottom">
       <div class="container boxBottom">
@@ -171,6 +184,9 @@
       </div>
     </div>
   </footer>
+  <script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="../script/lightslider.js"></script>
+  <script type="text/javascript" src="./script/script.js"></script>
 </body>
 
 </html>

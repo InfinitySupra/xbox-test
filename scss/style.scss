@@ -210,13 +210,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 .main__box {
   width: 20em;
   height: 100%;
   background: #FFF;
   box-shadow: 0px 0px 7px #181919;
-  margin-bottom: 10.12em;
+  margin: 20px 10px;
 }
 .image01 {
   background: url("../images/block1/block1-xbox.jpg") center no-repeat;
@@ -278,10 +279,15 @@ header {
     padding-left: 32.78%;
     text-shadow: #000 1px 0 7px;
   }
-  a {
-    padding-right: 3.43em;
+  button {
+    margin-right: 3.43em;
     width: 1.31em;
     height: 1.31em;
+    border: none;
+    background: none;
+  }
+  button:active {
+    transform: rotateY(10deg);
   }
 }
 .image04 {
@@ -301,6 +307,8 @@ header {
   filter: blur(1px);
 }
 .main__box-content {
+  width: 100%;
+  height: 100vh;
   background-color: rgba(104, 108, 111, .6);
   display: flex;
   align-items: center;
@@ -309,17 +317,22 @@ header {
   overflow:hidden;
   padding-bottom: 4.28em;
 }
+.container__button {
+  margin: 0 auto;
+  padding: 0;
+}
 .pageContent:hover {
   transform: scale(1.07) translate(2px, 2px);
   .image04, .image05, .image06, .image07 {
     filter: blur(0);
   }
 }
+.cs-hidden {
+  position: relative;
+}
 .buttonContent {
-  position: absolute;
   padding: 0.96em 4.12em;
-  margin-top: 37.93em;
-  margin-left: 37.74em;
+
 }
 .main__bottom {
   background: url("../images/block3/block3-rectangle.jpg") center no-repeat;
